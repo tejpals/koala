@@ -6,33 +6,35 @@ export default function Instructions() {
         You're tasked with creating a web application for Randy's Candies, a
         local candy store in Chicago. Randy, the owner, wants the application to
         do three things:
-        <ol>
-          <li>
-            Display items that are almost out of stock (at less than 25%
-            capacity)
-          </li>
-          <li>
-            Allow him to input how many of each of those items he wants to
-            re-order
-          </li>
-          <li>Determine the lowest total cost of re-ordering those items</li>
-        </ol>
-        The web application consists of a Java backend and React frontend.
-        <h2>Backend</h2>
-        <h3>Workbooks</h3>
-        The backend contains two workbooks, <code>Inventory.xlsx</code> and{" "}
-        <code>Distributors.xlsx</code>.<code>Inventory.xlsx</code> contains the
-        items in the store: their SKU, name, amount in stock, and the capacity
-        in the store for that item. <code>Distributors.xlsx</code> contains
-        three worksheets, one for each distributor, which list the items the
-        distributor sells: their SKU, item name, and price. Note that each
-        distributor will not necessarily have all the items that Randy sells at
-        his store.{" "}
-        <p>
-          It is up to you to find a Java library for reading workbooks, add it
-          as a Maven dependency, and use it to read in the provided workbooks.
-        </p>
-        <h3>Endpoints</h3>
+      </p>
+      <ol>
+        <li>
+          Display items that are almost out of stock (at less than 25%
+          capacity)
+        </li>
+        <li>
+          Allow him to input how many of each of those items he wants to
+          re-order
+        </li>
+        <li>Determine the lowest total cost of re-ordering those items</li>
+      </ol>
+      The web application consists of a Java backend and React frontend.
+      <h2>Backend</h2>
+      <h3>Workbooks</h3>
+      The backend contains two workbooks, <code>Inventory.xlsx</code> and{" "}
+      <code>Distributors.xlsx</code>.<code>Inventory.xlsx</code> contains the
+      items in the store: their SKU, name, amount in stock, and the capacity
+      in the store for that item. <code>Distributors.xlsx</code> contains
+      three worksheets, one for each distributor, which list the items the
+      distributor sells: their SKU, item name, and price. Note that each
+      distributor will not necessarily have all the items that Randy sells at
+      his store.{" "}
+      <p>
+        It is up to you to find a Java library for reading workbooks, add it
+        as a Maven dependency, and use it to read in the provided workbooks.
+      </p>
+      <h3>Endpoints</h3>
+      <p>
         The backend exposes two endpoints at <code>
           http://localhost:4567
         </code>{" "}
